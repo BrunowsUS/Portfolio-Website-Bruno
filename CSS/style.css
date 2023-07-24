@@ -6,32 +6,35 @@
 
 body {
     margin: 0;
+    padding: 0;
+    background-color: #1F1F1F;
 }
 
+/* BARRA DE NAVEGAÇÃO SUPERIOR */
 #nav-bar-top{
     padding: 0;
     margin: 0px ;
     background-color: #181818;
     width: 100%;
     height: 30px;
-    border-bottom: 2px solid;
-    border-color: blue;
+    border-bottom: 1px solid;
+    border-color: #303030;
     box-sizing: border-box;
 }
 
 #nav-bar-top ul{
     display: inline;
     padding: 0;
-    padding-left: 30px;
+    margin: 0;
+    padding-bottom: 30px;
+    text-align: justify;
 }
 
 #nav-bar-top li{
-    display: inline;
     padding-left: 10px;
+    padding-bottom: 30px;
     display: inline-block;
     margin: 0px ;
-    position: relative;
-    left: 30px;
 }
 
 #nav-bar-top li a{
@@ -41,9 +44,46 @@ body {
 
 }
 
+#nav-bar-top li img{
+    height: 26px;
+    width: 26px;
+}
+
 #nav-bar-top li a:hover{
     background-color: #cccccc;   
     padding: 5px;
     border-radius: 5px;
+}
+
+/*  BARRA LATERAL  */
+
+#side-bar {
+    background-color: #181818;
+    height: 100vh ;
+    width: 50px;
+    margin: 0;
+    border-right: 1px solid;
+    border-color: #303030;
+    box-sizing: border-box;
+}
+
+#side-bar ul{
+    padding: 10px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.side-bar-icons {
+    padding: 0;
+    margin: 0;
+    width: 15px;
+    height: 100%;
+    list-style-type: none;
+}
+
+.side-bar-icons img {
+    height: 26px;
+    width: 26px;
+    margin: 15px 0px 15px 0px;
 }
 
