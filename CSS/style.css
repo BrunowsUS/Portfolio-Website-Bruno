@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -8,6 +9,16 @@ body {
     margin: 0;
     padding: 0;
     background-color: #1F1F1F;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bars {
+    display: flex;
+    flex: 1;
 }
 
 /* BARRA DE NAVEGAÇÃO SUPERIOR */
@@ -20,25 +31,24 @@ body {
     border-bottom: 1px solid;
     border-color: #303030;
     box-sizing: border-box;
+    position: relative;
 }
 
 #nav-bar-top ul{
-    display: inline;
+    display: flex; /* Alteração: para alinhar os elementos em linha - CHATGPT */ 
+    align-items: center; /* Alteração: para alinhar verticalmente ao centro - CHATGPT */
     padding: 0;
     margin: 0;
-    padding-bottom: 30px;
     text-align: justify;
 }
 
 #nav-bar-top li{
-    padding-left: 10px;
-    padding-bottom: 30px;
+    padding-left: 15px;
     display: inline-block;
-    margin: 0px ;
 }
 
 #nav-bar-top li a{
-    color: #FFF;
+    color: #999999;
     text-decoration: none;
     margin: 0px ;
 
@@ -50,9 +60,9 @@ body {
 }
 
 #nav-bar-top li a:hover{
-    background-color: #cccccc;   
-    padding: 5px;
-    border-radius: 5px;
+    background-color: #424141;   
+    border-radius: 4px;
+    margin-bottom: 3px;
 }
 
 /*  BARRA LATERAL  */
@@ -87,3 +97,47 @@ body {
     margin: 15px 0px 15px 0px;
 }
 
+.side-bar-icon-hover {
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.side-bar-icon-hover:hover {
+    filter: grayscale(0%);
+}
+
+/*  SEGUNDA BARRA LATERAL  */
+
+#second-side-bar {
+    background-color: #181818;
+    height: 100vh ;
+    width: 200px;
+    margin: 0;
+    border-right: 1px solid;
+    border-color: #303030;
+    box-sizing: border-box;    
+}
+
+#second-side-bar ul li{
+    list-style-type: none;
+    color: #999999 ;
+}
+
+/* SIDE NUMERAL */
+
+#main-container {
+    padding-left: 0;
+    margin: 0;
+    display: list-item;
+
+}
+
+#side-numeral ul {
+    list-style: none;
+    color: #999999;
+    padding-left: 2rem;
+}
+
+.numeral-ladder {
+    font-family: 'Nanum Gothic Coding', monospace;
+}
